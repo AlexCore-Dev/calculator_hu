@@ -23,7 +23,7 @@ def szamologep():
             a = int(input('Adj meg egy szamot: '))
             muvelet = input('Muvelet: ')
             b = int(input('Adj meg egy masik szamot: '))
-        except ValueError:  # Hibakeyeles, csak szamot adhat meg a felhasznalo
+        except ValueError:  # Hibakezeles, csak szamot adhat meg a felhasznalo
             print('Csak szamot adhatsz meg')
             continue  # Hiba eseten visszateres a szam bekereshez
         
@@ -44,6 +44,6 @@ def szamologep():
             eredmeny = oszt(a, b)
             print(f'Eredmeny: {eredmeny}')
         else:
-            print('Ervenztelen muvelet')
+            print('Ervenytelen muvelet')
 
 szamologep()
